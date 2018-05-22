@@ -1,12 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var morgan = require("morgan");
 
-router.use("/", logInfo);
+module.exports = router;
 
-function logInfo (req, res, next){
-	morgan("tiny")
-};
+
 
 
 
